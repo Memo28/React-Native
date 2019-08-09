@@ -13,6 +13,7 @@ import {
 
 import Home from './src/screens/containers/home';
 import Header from './src/sections/components/header';
+import SuggestionList from './src/videos/components/suggestion-list'
 
 const App = () => {
   return (
@@ -22,7 +23,7 @@ const App = () => {
       </Header>
       <Text>Buscador</Text>
       <Text>Categorias</Text>
-      <Text>Sugerencias</Text>
+      <SuggestionList/>
     </Home>
   );
 };
