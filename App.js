@@ -13,9 +13,14 @@ import {
 
 import Home from './src/screens/containers/home';
 import Header from './src/sections/components/header';
-import SuggestionList from './src/videos/components/suggestion-list'
+import SuggestionList from './src/videos/components/suggestion-list';
+import API from './utils/api';
 
 const App = () => {
+  componentDidMount= () =>{
+    API.getSuggestions(1);
+  }
+
   return (
     <Home>
       <Header>
